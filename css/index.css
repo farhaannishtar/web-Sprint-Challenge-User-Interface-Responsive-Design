@@ -100,7 +100,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  /* height: 70vh; */
   align-content: center;
   /* border: 1px solid red */
 }
@@ -250,11 +250,11 @@ footer {
     padding-top: 2.5vh;
     font-size: 3rem;
     background-color: rgb(0, 4, 17, .8);
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(165, 173, 175);
 }
 
 .footer-button {
-  background-color:rgb(0, 4, 17);
+  background-color:rgb(168, 173, 191);
 }
 
 .footer-flex {
@@ -270,69 +270,160 @@ footer {
   margin-bottom: 2%;
   padding: 0% 2%;
   font-size: 2.3rem;
+  margin-left: 8%;
 }
 
 .email-signup {
   width: 40%;
 }
 
+.input-footer {
+  line-height: 20px;
+}
+
 .copyright {
   font-size: 1.5rem;
+  margin-top: 5%;
+  margin-left: 50%;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+  header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/home-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-    /* gallery section */
-    .gallery {
-        height: auto;
-    }
-    
-    /* about us section */
+  .header-div {
+  background-color: rgb(0, 4, 17, .8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* I used vh here */
+  align-content: center;
+  /* border: 1px solid red */
+  }
 
-    .about {
-        height: 200vh;
-    }
-    
-    .about h2 {
-        width: 100%;
-        padding-top: 5vh;
-    }
-    
-    .about-container .text {
-        width: 85%;
-    }
-    
-    /* contact us section */
-    .contact h3 {
-        padding-top: 2.5vh;
-    }
-    
-    .info {
-        flex-wrap: wrap;
-    }
-    
-    .address {
-        width: 100%;
-        padding-bottom: 2.5vh;
-    }
-    
-    .hours {
-        width: 100%;
-    }
-    
-    .contacts {
-        width: 100%;
-        padding-bottom: 2.5vh;
-    }
+  h1 {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  }
 
-    /* footer section */
-    footer {
-        height: auto;
-        padding-top: 2.5vh;
-        font-size: 2rem;
-        /* background-color: rgb(0, 4, 17, .8) */
-    }
+  h1 a {
+  font-size: 6rem;
+  /* border: 1px solid red */
+  }
+
+  .header-nav {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-evenly; */
+  /* border: 1px solid red */
+  }
+
+  .icons {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red */
+  }
+
+  .header-button .fa-brands {
+  margin: 0 10px;
+  margin-top: 20px;
+  }
+
+
+  .header-button {
+  background-color:rgb(0, 4, 17);
+  text-decoration: none;
+  border: none;
+  background: none;
+  }
+  
+
+  /* gallery section */
+  .gallery {
+      height: auto;
+  }
+  
+  /* about us section */
+
+  .about {
+      height: 200vh;
+  }
+  
+  .about h2 {
+      width: 100%;
+      padding-top: 5vh;
+  }
+  
+  .about-container .text {
+      width: 85%;
+  }
+  
+  /* contact us section */
+  .contact h3 {
+      padding-top: 2.5vh;
+  }
+  
+  .info {
+      flex-wrap: wrap;
+  }
+  
+  .address {
+      width: 100%;
+      padding-bottom: 2.5vh;
+  }
+  
+  .hours {
+      width: 100%;
+  }
+  
+  .contacts {
+      width: 100%;
+      padding-bottom: 2.5vh;
+  }
+
+  .photos img {
+    width: 100%;
+  }
+
+  /* footer section */
+  footer {
+      height: auto;
+      padding-top: 2.5vh;
+      font-size: 2rem;
+      /* background-color: rgb(0, 4, 17, .8) */
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .email-signup {
+    width: 100%;
+    text-align: center;
+  }
+  .copyright {
+      font-size: 1.5rem;
+      margin-top: 5%;
+      text-align: center;
+      margin: 15%
+  }
 }
