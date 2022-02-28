@@ -50,6 +50,7 @@ table {
 * {
     box-sizing: border-box;
     color: rgb(225, 239, 230);
+    background-color: aquamarine;
 }
 
 html {
